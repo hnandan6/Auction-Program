@@ -1,11 +1,22 @@
-programming_dictionary = {
-  "Bug": "An error in a program that prevents the program from running as expected.", 
-  "Function": "A piece of code that you can easily call over and over again.",
-  "Test": "This is a test"
-}
+from replit import clear
+import art
+print(art.logo)
 
-#print(programming_dictionary["Bug"])
+test = {}
 
-programming_dictionary["one"] = "This is the first"
 
-print(programming_dictionary)
+x = "yes"
+
+
+while x != "no":
+    X1 = input("Pls Enter your Name")
+    Y1 = input("Pls Enter your bid")
+    test[X1] = Y1
+    x = input("Do you want to bid - Yes or No").lower()
+    if x == "yes":
+      clear()
+
+#z = test[max(test, key=test.get)]
+z = max(test, key=test.get)
+#print(test)
+print(f"The Winner is {z}")
